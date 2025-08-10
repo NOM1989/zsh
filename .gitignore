@@ -1,0 +1,4 @@
+.env
+plugins/
+aliases/local_*.zsh
+languages.zsh
