@@ -17,11 +17,11 @@ setopt sharehistory # Share history across terminals
 
 # Set editors
 export EDITOR="vi"
-export VISUAL="nvim"
+export VISUAL="vi"
 
 # Completions (preliminary)
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 typeset -a sources
 sources+="plugins.zsh" # Loads plugins asyncronously
