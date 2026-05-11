@@ -28,8 +28,12 @@ sources+="plugins.zsh" # Loads plugins asyncronously
 sources+="keybinds.zsh"
 sources+="languages.zsh"
 sources+="aliases/core.zsh"
-sources+="aliases/local_ThinkPad.zsh"
 sources+="aliases/.env"
+
+# Local aliases
+for f in $ZSHCONF/aliases/local_*.zsh(N); do
+  sources+="${f#$ZSHCONF/}"
+done
 
 # Source files if they exist
 foreach file (`echo $sources`)

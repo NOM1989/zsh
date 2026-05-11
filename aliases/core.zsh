@@ -23,6 +23,7 @@ alias gd='git diff'
 alias gpl='git pull'
 alias gp='git push'
 alias gco='git checkout '
+alias lz='lazygit'
 
 # ls with icons
 alias l='eza --icons --group-directories-first'
@@ -31,6 +32,13 @@ alias ll='eza --icons -l --group-directories-first'
 alias la='eza --icons -a --group-directories-first'
 alias lt='eza --icons -T'
 alias lta='eza --icons -Ta'
+
+# Vim
+alias vim="n"
+alias :w='exit'
+alias :q='exit'
+alias :Q='exit'
+alias :wq='exit'
 
 n() {
     local venv_activated=0
