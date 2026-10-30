@@ -1,3 +1,6 @@
+# Use emacs keybindings (zsh defaults to vi mode when $EDITOR/$VISUAL contain "vi")
+bindkey -e
+
 # Enable history search based on what's already typed (doesnt work)
 # bindkey '^[[A' history-beginning-search-backward
 # bindkey '^[[B' history-beginning-search-forward

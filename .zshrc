@@ -27,6 +27,7 @@ typeset -a sources
 sources+="plugins.zsh" # Loads plugins asyncronously
 sources+="keybinds.zsh"
 sources+="languages.zsh"
+sources+="newt.zsh"
 sources+="aliases/core.zsh"
 sources+="aliases/.env"
 
@@ -45,9 +46,7 @@ end
 # Eval if installed
 hash zoxide 2>/dev/null && eval "$(zoxide init zsh)"
 hash starship 2>/dev/null && eval "$(starship init zsh)"
-hash thefuck 2>/dev/null && eval "$(thefuck --alias)"
 
 # zprof
 
-# To-Do
-# echo "To Dos!"
+export PATH="$HOME/.local/bin:$PATH"
